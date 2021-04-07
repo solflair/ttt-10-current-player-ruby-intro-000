@@ -12,10 +12,8 @@ def current_player(board)
   x = 0
   o = 0
 
-  board.each do |pos|
   x = board.filter{|p| p == "X"}.count
   o = board.filter{|s| s == "O"}.count
-  end
 
   if x > o
     return "O"
