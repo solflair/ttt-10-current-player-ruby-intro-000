@@ -13,11 +13,7 @@ def current_player(board)
   o = 0
 
   board.each do |pos|
-    if pos == "X"
-      x += 1
-    elsif pos == "O"
-      o += 1
-    end
+  board.filter{|p| p == "X"}.count
   end
 
   if x > o
